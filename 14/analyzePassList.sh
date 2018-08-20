@@ -1,0 +1,1 @@
+john --wordlist=dicti0nary_8Th64ikELWEsZFrf.txt pass.txt
