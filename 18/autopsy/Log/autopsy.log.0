@@ -1,0 +1,488 @@
+2018-08-21 23:16:44.342 org.sleuthkit.autopsy.coreutils.ModuleSettings getConfigSetting
+INFO: File did not exist. Created file [Tags.properties]
+2018-08-21 23:16:45.238 org.sleuthkit.autopsy.coreutils.UNCPathUtilities getMappedDrives
+WARNING: Unable to parse 'net use' output
+java.util.NoSuchElementException
+	java.util.Scanner.throwFor(Unknown Source)
+	java.util.Scanner.next(Unknown Source)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.getMappedDrives(UNCPathUtilities.java:294)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.<init>(UNCPathUtilities.java:57)
+	org.sleuthkit.autopsy.keywordsearch.Index.<init>(Index.java:35)
+	org.sleuthkit.autopsy.keywordsearch.IndexFinder.createLatestVersionIndexDir(IndexFinder.java:68)
+	org.sleuthkit.autopsy.keywordsearch.SolrSearchService.openCaseResources(SolrSearchService.java:303)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$openAppServiceCaseResources$8(Case.java:2111)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+2018-08-21 23:16:45.323 org.sleuthkit.autopsy.coreutils.UNCPathUtilities getMappedDrives
+WARNING: Unable to parse 'net use' output
+java.util.NoSuchElementException
+	java.util.Scanner.throwFor(Unknown Source)
+	java.util.Scanner.next(Unknown Source)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.getMappedDrives(UNCPathUtilities.java:294)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.rescanDrives(UNCPathUtilities.java:258)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.convertPathToUNC(UNCPathUtilities.java:335)
+	org.sleuthkit.autopsy.keywordsearch.Index.<init>(Index.java:49)
+	org.sleuthkit.autopsy.keywordsearch.IndexFinder.createLatestVersionIndexDir(IndexFinder.java:68)
+	org.sleuthkit.autopsy.keywordsearch.SolrSearchService.openCaseResources(SolrSearchService.java:303)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$openAppServiceCaseResources$8(Case.java:2111)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+2018-08-21 23:16:45.48 org.sleuthkit.autopsy.coreutils.UNCPathUtilities getMappedDrives
+WARNING: Unable to parse 'net use' output
+java.util.NoSuchElementException
+	java.util.Scanner.throwFor(Unknown Source)
+	java.util.Scanner.next(Unknown Source)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.getMappedDrives(UNCPathUtilities.java:294)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.<init>(UNCPathUtilities.java:57)
+	org.sleuthkit.autopsy.keywordsearch.IndexMetadata.<init>(IndexMetadata.java:64)
+	org.sleuthkit.autopsy.keywordsearch.SolrSearchService.openCaseResources(SolrSearchService.java:359)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$openAppServiceCaseResources$8(Case.java:2111)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+2018-08-21 23:16:45.607 org.sleuthkit.autopsy.coreutils.UNCPathUtilities getMappedDrives
+WARNING: Unable to parse 'net use' output
+java.util.NoSuchElementException
+	java.util.Scanner.throwFor(Unknown Source)
+	java.util.Scanner.next(Unknown Source)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.getMappedDrives(UNCPathUtilities.java:294)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.rescanDrives(UNCPathUtilities.java:258)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.convertPathToUNC(UNCPathUtilities.java:335)
+	org.sleuthkit.autopsy.keywordsearch.IndexMetadata.<init>(IndexMetadata.java:76)
+	org.sleuthkit.autopsy.keywordsearch.SolrSearchService.openCaseResources(SolrSearchService.java:359)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$openAppServiceCaseResources$8(Case.java:2111)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+2018-08-21 23:16:48.848 org.sleuthkit.autopsy.keywordsearch.Server isRunning
+INFO: Solr server is running
+2018-08-21 23:16:51.431 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened autopsy (autopsy_20180821_231632) in C:\Users\molan\OneDrive\CTF\ksnctf_code\18\autopsy as the current case
+2018-08-21 23:16:51.6 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.7.8 loaded in native mode
+2018-08-21 23:16:51.634 org.sleuthkit.autopsy.imagegallery.PerCaseProperties getConfigSetting
+INFO: File did not exist. Created file [イメージギャラリー.properties]
+2018-08-21 23:16:52.362 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.8.0
+2018-08-21 23:16:52.376 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = E01認証ツール, version = 4.8.0
+2018-08-21 23:16:52.396 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = 埋め込みファイルの抽出ツール, version = 4.8.0
+2018-08-21 23:16:52.415 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.8.0
+2018-08-21 23:16:52.43 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exifパーサ, version = 4.8.0
+2018-08-21 23:16:52.444 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = 拡張子不一致ディテクター, version = 4.8.0
+2018-08-21 23:16:52.462 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = ファイルタイプの特定, version = 4.8.0
+2018-08-21 23:16:52.485 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = ハッシュルックアップ, version = 4.8.0
+2018-08-21 23:16:52.504 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = 疑わしいファイル検知, version = 4.8.0
+2018-08-21 23:16:52.518 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRecカーバ, version = 7.0
+2018-08-21 23:16:52.529 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = 仮想マシンエクストラクター, version = 4.8.0
+2018-08-21 23:16:52.53 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = キーワード検索, version = 4.8.0
+2018-08-21 23:16:52.533 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Emailパーサ, version = 4.8.0
+2018-08-21 23:16:52.535 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = 最近のアクティビティ, version = 4.8.0
+2018-08-21 23:17:09.811 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.8.0
+2018-08-21 23:17:09.827 org.sleuthkit.autopsy.coreutils.ModuleSettings setConfigSetting
+INFO: File did not exist. Created file [org.sleuthkit.autopsy.casemodule.AddImageWizardIngestConfigPanel.properties]
+2018-08-21 23:17:11.225 org.sleuthkit.autopsy.coreutils.ModuleSettings getConfigSetting
+INFO: File did not exist. Created file [LastDspUsed.properties]
+2018-08-21 23:17:11.228 org.sleuthkit.autopsy.casemodule.AddImageWizardSelectDspPanel getComponent
+WARNING: There was no properties file containing the last DataSourceProcessor used, Disk Image or VM will be selected as default selection
+2018-08-21 23:17:24.42 org.sleuthkit.autopsy.coreutils.ModuleSettings getConfigSetting
+INFO: File did not exist. Created file [org.sleuthkit.autopsy.casemodule.ImageDSProcessor.properties]
+2018-08-21 23:17:53.573 org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
+WARNING: Cannot find DataContentTopComponent component. It will not be located properly in the window system.
+2018-08-21 23:18:02.222 org.sleuthkit.autopsy.ingest.IngestPipelinesConfiguration getInstance
+INFO: Creating ingest module loader instance
+2018-08-21 23:18:02.299 org.sleuthkit.autopsy.coreutils.UNCPathUtilities getMappedDrives
+WARNING: Unable to parse 'net use' output
+java.util.NoSuchElementException
+	java.util.Scanner.throwFor(Unknown Source)
+	java.util.Scanner.next(Unknown Source)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.getMappedDrives(UNCPathUtilities.java:294)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.<init>(UNCPathUtilities.java:57)
+	org.sleuthkit.autopsy.modules.photoreccarver.PhotoRecCarverFileIngestModule.<init>(PhotoRecCarverFileIngestModule.java:100)
+	org.sleuthkit.autopsy.modules.photoreccarver.PhotoRecCarverIngestModuleFactory.createFileIngestModule(PhotoRecCarverIngestModuleFactory.java:71)
+	org.sleuthkit.autopsy.ingest.IngestModuleTemplate.createFileIngestModule(IngestModuleTemplate.java:85)
+	org.sleuthkit.autopsy.ingest.FileIngestPipeline.<init>(FileIngestPipeline.java:61)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.createIngestPipelines(DataSourceIngestJob.java:271)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.<init>(DataSourceIngestJob.java:215)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.<init>(DataSourceIngestJob.java:191)
+	org.sleuthkit.autopsy.ingest.IngestJob.<init>(IngestJob.java:83)
+	org.sleuthkit.autopsy.ingest.IngestManager.queueIngestJob(IngestManager.java:307)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.startIngest(AddImageWizardAddingProgressPanel.java:305)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.readSettings(AddImageWizardAddingProgressPanel.java:256)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.readSettings(AddImageWizardAddingProgressPanel.java:60)
+	org.openide.WizardDescriptor.updateStateOpen(WizardDescriptor.java:867)
+	org.openide.WizardDescriptor.updateState(WizardDescriptor.java:822)
+	org.openide.WizardDescriptor._updateState(WizardDescriptor.java:800)
+	org.openide.WizardDescriptor.goToNextStep(WizardDescriptor.java:1072)
+	org.openide.WizardDescriptor.access$1900(WizardDescriptor.java:92)
+	org.openide.WizardDescriptor$Listener$1.run(WizardDescriptor.java:2208)
+	org.openide.WizardDescriptor.lazyValidate(WizardDescriptor.java:1516)
+	org.openide.WizardDescriptor.access$2000(WizardDescriptor.java:92)
+	org.openide.WizardDescriptor$Listener.actionPerformed(WizardDescriptor.java:2227)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.openide.util.WeakListenerImpl$ProxyListener.invoke(WeakListenerImpl.java:487)
+	com.sun.proxy.$Proxy11.actionPerformed(Unknown Source)
+	javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	java.awt.Component.processMouseEvent(Unknown Source)
+	javax.swing.JComponent.processMouseEvent(Unknown Source)
+	java.awt.Component.processEvent(Unknown Source)
+	java.awt.Container.processEvent(Unknown Source)
+	java.awt.Component.dispatchEventImpl(Unknown Source)
+	java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.awt.Component.dispatchEvent(Unknown Source)
+	java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.awt.Window.dispatchEventImpl(Unknown Source)
+	java.awt.Component.dispatchEvent(Unknown Source)
+	java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.awt.EventQueue.access$500(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue$4.run(Unknown Source)
+	java.awt.EventQueue$4.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue.dispatchEvent(Unknown Source)
+	org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.WaitDispatchSupport$2.run(Unknown Source)
+	java.awt.WaitDispatchSupport$4.run(Unknown Source)
+	java.awt.WaitDispatchSupport$4.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.awt.WaitDispatchSupport.enter(Unknown Source)
+	java.awt.Dialog.show(Unknown Source)
+	org.netbeans.core.windows.services.NbPresenter.superShow(NbPresenter.java:1086)
+	org.netbeans.core.windows.services.NbPresenter.doShow(NbPresenter.java:1136)
+	org.netbeans.core.windows.services.NbPresenter.run(NbPresenter.java:1108)
+	org.netbeans.core.windows.services.NbPresenter.run(NbPresenter.java:131)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.doEventAccess(NbMutexEventProvider.java:138)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.readAccess(NbMutexEventProvider.java:98)
+	org.netbeans.modules.openide.util.LazyMutexImplementation.readAccess(LazyMutexImplementation.java:94)
+	org.openide.util.Mutex.readAccess(Mutex.java:218)
+	org.netbeans.core.windows.services.NbPresenter.show(NbPresenter.java:1093)
+	java.awt.Component.show(Unknown Source)
+	java.awt.Component.setVisible(Unknown Source)
+	java.awt.Window.setVisible(Unknown Source)
+	java.awt.Dialog.setVisible(Unknown Source)
+	org.sleuthkit.autopsy.casemodule.AddImageAction.actionPerformed(AddImageAction.java:140)
+	org.sleuthkit.autopsy.casemodule.NewCaseWizardAction$1.done(NewCaseWizardAction.java:120)
+	javax.swing.SwingWorker$5.run(Unknown Source)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	sun.swing.AccumulativeRunnable.run(Unknown Source)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	javax.swing.Timer.fireActionPerformed(Unknown Source)
+	javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.awt.EventQueue.access$500(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue.dispatchEvent(Unknown Source)
+	org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.awt.EventDispatchThread.run(Unknown Source)
+2018-08-21 23:18:02.363 org.sleuthkit.autopsy.coreutils.UNCPathUtilities getMappedDrives
+WARNING: Unable to parse 'net use' output
+java.util.NoSuchElementException
+	java.util.Scanner.throwFor(Unknown Source)
+	java.util.Scanner.next(Unknown Source)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.getMappedDrives(UNCPathUtilities.java:294)
+	org.sleuthkit.autopsy.coreutils.UNCPathUtilities.<init>(UNCPathUtilities.java:57)
+	org.sleuthkit.autopsy.modules.photoreccarver.PhotoRecCarverFileIngestModule.<init>(PhotoRecCarverFileIngestModule.java:100)
+	org.sleuthkit.autopsy.modules.photoreccarver.PhotoRecCarverIngestModuleFactory.createFileIngestModule(PhotoRecCarverIngestModuleFactory.java:71)
+	org.sleuthkit.autopsy.ingest.IngestModuleTemplate.createFileIngestModule(IngestModuleTemplate.java:85)
+	org.sleuthkit.autopsy.ingest.FileIngestPipeline.<init>(FileIngestPipeline.java:61)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.createIngestPipelines(DataSourceIngestJob.java:271)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.<init>(DataSourceIngestJob.java:215)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.<init>(DataSourceIngestJob.java:191)
+	org.sleuthkit.autopsy.ingest.IngestJob.<init>(IngestJob.java:83)
+	org.sleuthkit.autopsy.ingest.IngestManager.queueIngestJob(IngestManager.java:307)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.startIngest(AddImageWizardAddingProgressPanel.java:305)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.readSettings(AddImageWizardAddingProgressPanel.java:256)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.readSettings(AddImageWizardAddingProgressPanel.java:60)
+	org.openide.WizardDescriptor.updateStateOpen(WizardDescriptor.java:867)
+	org.openide.WizardDescriptor.updateState(WizardDescriptor.java:822)
+	org.openide.WizardDescriptor._updateState(WizardDescriptor.java:800)
+	org.openide.WizardDescriptor.goToNextStep(WizardDescriptor.java:1072)
+	org.openide.WizardDescriptor.access$1900(WizardDescriptor.java:92)
+	org.openide.WizardDescriptor$Listener$1.run(WizardDescriptor.java:2208)
+	org.openide.WizardDescriptor.lazyValidate(WizardDescriptor.java:1516)
+	org.openide.WizardDescriptor.access$2000(WizardDescriptor.java:92)
+	org.openide.WizardDescriptor$Listener.actionPerformed(WizardDescriptor.java:2227)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.openide.util.WeakListenerImpl$ProxyListener.invoke(WeakListenerImpl.java:487)
+	com.sun.proxy.$Proxy11.actionPerformed(Unknown Source)
+	javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	java.awt.Component.processMouseEvent(Unknown Source)
+	javax.swing.JComponent.processMouseEvent(Unknown Source)
+	java.awt.Component.processEvent(Unknown Source)
+	java.awt.Container.processEvent(Unknown Source)
+	java.awt.Component.dispatchEventImpl(Unknown Source)
+	java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.awt.Component.dispatchEvent(Unknown Source)
+	java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.awt.Window.dispatchEventImpl(Unknown Source)
+	java.awt.Component.dispatchEvent(Unknown Source)
+	java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.awt.EventQueue.access$500(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue$4.run(Unknown Source)
+	java.awt.EventQueue$4.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue.dispatchEvent(Unknown Source)
+	org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.WaitDispatchSupport$2.run(Unknown Source)
+	java.awt.WaitDispatchSupport$4.run(Unknown Source)
+	java.awt.WaitDispatchSupport$4.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.awt.WaitDispatchSupport.enter(Unknown Source)
+	java.awt.Dialog.show(Unknown Source)
+	org.netbeans.core.windows.services.NbPresenter.superShow(NbPresenter.java:1086)
+	org.netbeans.core.windows.services.NbPresenter.doShow(NbPresenter.java:1136)
+	org.netbeans.core.windows.services.NbPresenter.run(NbPresenter.java:1108)
+	org.netbeans.core.windows.services.NbPresenter.run(NbPresenter.java:131)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.doEventAccess(NbMutexEventProvider.java:138)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.readAccess(NbMutexEventProvider.java:98)
+	org.netbeans.modules.openide.util.LazyMutexImplementation.readAccess(LazyMutexImplementation.java:94)
+	org.openide.util.Mutex.readAccess(Mutex.java:218)
+	org.netbeans.core.windows.services.NbPresenter.show(NbPresenter.java:1093)
+	java.awt.Component.show(Unknown Source)
+	java.awt.Component.setVisible(Unknown Source)
+	java.awt.Window.setVisible(Unknown Source)
+	java.awt.Dialog.setVisible(Unknown Source)
+	org.sleuthkit.autopsy.casemodule.AddImageAction.actionPerformed(AddImageAction.java:140)
+	org.sleuthkit.autopsy.casemodule.NewCaseWizardAction$1.done(NewCaseWizardAction.java:120)
+	javax.swing.SwingWorker$5.run(Unknown Source)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	sun.swing.AccumulativeRunnable.run(Unknown Source)
+	javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	javax.swing.Timer.fireActionPerformed(Unknown Source)
+	javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.awt.EventQueue.access$500(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue.dispatchEvent(Unknown Source)
+	org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.awt.EventDispatchThread.run(Unknown Source)
+2018-08-21 23:18:02.508 org.sleuthkit.autopsy.ingest.IngestMonitor$MonitorTimerAction logMonitoredRootDirectory
+INFO: Monitoring disk space of C:\
+2018-08-21 23:18:02.877 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2018-08-21 23:18:03.36 org.sleuthkit.autopsy.keywordsearch.Server isRunning
+INFO: Solr server is running
+2018-08-21 23:18:05.995 org.sleuthkit.autopsy.ingest.DataSourceIngestJob start
+INFO: Starting first stage analysis for drive.img (jobId=0)
+2018-08-21 23:18:05.999 org.sleuthkit.autopsy.ingest.DataSourceIngestJob startFirstStage
+INFO: Scheduling first stage data source and file level analysis tasks for drive.img (jobId=0)
+2018-08-21 23:18:06.002 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: 最近のアクティビティ analysis of drive.img (jobId=1) starting
+2018-08-21 23:18:06.005 org.sleuthkit.autopsy.recentactivity.Chrome getHistory
+INFO: アロケーションされたChrome履歴ファイルが見つかりませんでした。
+2018-08-21 23:18:06.006 org.sleuthkit.autopsy.recentactivity.Chrome getBookmark
+INFO: Didn't find any Chrome bookmark files.
+2018-08-21 23:18:06.007 org.sleuthkit.autopsy.recentactivity.Chrome getCookie
+INFO: Didn't find any Chrome cookies files.
+2018-08-21 23:18:06.008 org.sleuthkit.autopsy.recentactivity.Chrome getLogin
+INFO: Didn't find any Chrome signon files.
+2018-08-21 23:18:06.008 org.sleuthkit.autopsy.recentactivity.Chrome getDownload
+INFO: Didn't find any Chrome download files.
+2018-08-21 23:18:06.009 org.sleuthkit.autopsy.recentactivity.Firefox getHistory
+INFO: Firefox履歴ファイルが見つかりませんでした。
+2018-08-21 23:18:06.011 org.sleuthkit.autopsy.recentactivity.Firefox getBookmark
+INFO: Didn't find any firefox bookmark files.
+2018-08-21 23:18:06.011 org.sleuthkit.autopsy.recentactivity.Firefox getDownloadPreVersion24
+INFO: Didn't find any pre-version-24.0 Firefox download files.
+2018-08-21 23:18:06.013 org.sleuthkit.autopsy.recentactivity.Firefox getDownloadVersion24
+INFO: Didn't find any version-24.0 Firefox download files.
+2018-08-21 23:18:06.013 org.sleuthkit.autopsy.recentactivity.Firefox getCookie
+INFO: Didn't find any Firefox cookie files.
+2018-08-21 23:18:06.015 org.sleuthkit.autopsy.recentactivity.ExtractIE getBookmark
+INFO: Didn't find any IE bookmark files.
+2018-08-21 23:18:06.016 org.sleuthkit.autopsy.recentactivity.ExtractIE getCookie
+INFO: Didn't find any IE cookies files.
+2018-08-21 23:18:06.016 org.sleuthkit.autopsy.recentactivity.ExtractIE getHistory
+INFO: Pasco results path: C:\Users\molan\OneDrive\CTF\ksnctf_code\18\autopsy\Temp\RecentActivity\IE\results
+2018-08-21 23:18:06.017 org.sleuthkit.autopsy.recentactivity.ExtractIE getHistory
+INFO: Pasco2 home: C:\Program Files\Autopsy-4.8.0\autopsy\pasco2
+2018-08-21 23:18:06.018 org.sleuthkit.autopsy.recentactivity.ExtractIE getHistory
+INFO: Internet Explorer履歴ファイルが見つかりませんでした。
+2018-08-21 23:18:06.02 org.sleuthkit.autopsy.recentactivity.RecentDocumentsByLnk getRecentDocuments
+INFO: Didn't find any recent files.
+2018-08-21 23:18:06.021 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer findSearchQueries
+INFO: Processing 0 blackboard artifacts.
+2018-08-21 23:18:06.026 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer findSearchQueries
+INFO: Extracted 0 queries from the blackboard
+2018-08-21 23:18:06.026 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer process
+INFO: Search Engine stats: 
+Google : 0
+Yahoo : 0
+Twitter : 0
+LinkedIn : 0
+Facebook : 0
+Bing : 0
+Baidu : 0
+Sogou : 0
+Soso : 0
+Youdao : 0
+Yandex : 0
+Biglobe : 0
+Linkestan : 0
+Parseek : 0
+Parset : 0
+
+2018-08-21 23:18:06.042 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer complete
+INFO: Search Engine URL Query Analyzer has completed.
+2018-08-21 23:18:06.043 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: 最近のアクティビティ analysis of drive.img (jobId=1) finished
+2018-08-21 23:18:06.043 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Encryption Detection analysis of drive.img (jobId=1) starting
+2018-08-21 23:18:06.044 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Encryption Detection analysis of drive.img (jobId=1) finished
+2018-08-21 23:18:06.044 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: 仮想マシンエクストラクター analysis of drive.img (jobId=1) starting
+2018-08-21 23:18:06.045 org.sleuthkit.autopsy.modules.vmextractor.VMExtractorIngestModule process
+INFO: Looking for virtual machine files in data source drive.img
+2018-08-21 23:18:06.047 org.sleuthkit.autopsy.modules.vmextractor.VMExtractorIngestModule process
+INFO: No virtual machine files found in data source drive.img
+2018-08-21 23:18:06.047 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: 仮想マシンエクストラクター analysis of drive.img (jobId=1) finished
+2018-08-21 23:18:06.048 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Android Analyzer analysis of drive.img (jobId=1) starting
+2018-08-21 23:18:06.07 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Ingest job 0 started
+2018-08-21 23:18:06.748 AndroidIngestModule process
+INFO: running 8 analyzers
+2018-08-21 23:18:07.053 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Android Analyzer analysis of drive.img (jobId=1) finished
+2018-08-21 23:18:07.54 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner startJob
+INFO: Adding job 0
+2018-08-21 23:18:07.541 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner startJob
+INFO: Resetting periodic search time out to default value
+2018-08-21 23:18:13.68 org.sleuthkit.autopsy.ingest.DataSourceIngestJob finishFirstStage
+INFO: Finished first stage analysis for drive.img (jobId=0)
+2018-08-21 23:18:13.681 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Keyword search ingest module instance 0 shutting down
+2018-08-21 23:18:13.683 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Keyword search ingest module instance 1 shutting down
+2018-08-21 23:18:13.684 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner endJob
+INFO: Commiting search index before final search for search job 0
+2018-08-21 23:18:14.331 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner doFinalSearch
+INFO: Starting final search for search job 0
+2018-08-21 23:18:14.331 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner doFinalSearch
+INFO: Checking for previous search for search job 0 before executing final search
+2018-08-21 23:18:14.333 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner doFinalSearch
+INFO: Kicking off final search for search job 0
+2018-08-21 23:18:14.333 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner doFinalSearch
+INFO: Waiting for final search for search job 0
+2018-08-21 23:18:14.457 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner$Searcher doInBackground
+INFO: Searcher took 0 secs to run (final = true)
+2018-08-21 23:18:14.458 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner$SearchJobInfo searchNotify
+INFO: Notifying after finishing search
+2018-08-21 23:18:14.458 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner doFinalSearch
+INFO: Final search for search job 0 completed
+2018-08-21 23:18:14.458 org.sleuthkit.autopsy.keywordsearch.IngestSearchRunner endJob
+INFO: No more search jobs. Stopping periodic search task
+2018-08-21 23:18:14.469 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Indexed files count: 44
+2018-08-21 23:18:14.475 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Indexed file chunks count: 34
+2018-08-21 23:18:14.476 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule postIndexSummary
+INFO: Keyword Indexing Completed: <table border=0><tr><td>既知タイプがあるファイル</td><td>7</td></tr><tr><td>一般的なストリングが抽出されたファイル</td><td>27</td></tr><tr><td>メタデータのみインデックス化されました</td><td>10</td></tr><tr><td>エラー（インデックスエラー）</td><td>0</td></tr><tr><td>エラー（テキスト抽出）</td><td>0</td></tr><tr><td>エラー（I/O）</td><td>0</td></tr></table>
+2018-08-21 23:18:14.479 org.sleuthkit.autopsy.ingest.DataSourceIngestJob startSecondStage
+INFO: Starting second stage analysis for drive.img (jobId=0)
+2018-08-21 23:18:14.48 org.sleuthkit.autopsy.ingest.DataSourceIngestJob startSecondStage
+INFO: Scheduling second stage data source level analysis tasks for drive.img (jobId=0)
+2018-08-21 23:18:14.481 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: E01認証ツール analysis of drive.img (jobId=1) starting
+2018-08-21 23:18:14.482 org.sleuthkit.autopsy.modules.e01verify.E01VerifyIngestModule process
+INFO: Skipping non-ewf image drive.img
+2018-08-21 23:18:14.483 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: E01認証ツール analysis of drive.img (jobId=1) finished
+2018-08-21 23:18:14.483 org.sleuthkit.autopsy.ingest.DataSourceIngestJob finish
+INFO: Finished analysis for drive.img (jobId=0)
+2018-08-21 23:18:14.508 org.sleuthkit.autopsy.ingest.IngestManager finishIngestJob
+INFO: Ingest job 0 completed
+2018-08-21 23:20:07.913 org.sleuthkit.autopsy.coreutils.ImageUtils$GetThumbnailTask lambda$saveThumbnail$0
+WARNING: Could not write thumbnail for /img_drive.img/Liberty Leading the People.jpg: java.lang.NullPointerException
+2018-08-21 23:25:35.781 org.sleuthkit.autopsy.keywordsearch.Server stop
+INFO: Stopping Solr server from: C:\Program Files\Autopsy-4.8.0\autopsy\solr
+2018-08-21 23:25:35.781 org.sleuthkit.autopsy.keywordsearch.Server runSolrCommand
+INFO: Running Solr command: [C:\Program Files\Autopsy-4.8.0\jre\bin\java, -Xmx512m, -DSTOP.PORT=34343, -Djetty.port=23232, -DSTOP.KEY=jjk#09s, -jar, start.jar, --stop]
+2018-08-21 23:25:35.785 org.sleuthkit.autopsy.keywordsearch.Server runSolrCommand
+INFO: Finished running Solr command
+2018-08-21 23:25:35.785 org.sleuthkit.autopsy.keywordsearch.Server stop
+INFO: Waiting for Solr server to stop
+2018-08-21 23:25:39.901 org.sleuthkit.autopsy.keywordsearch.Server stop
+INFO: Finished stopping Solr server
+2018-08-21 23:25:39.901 org.sleuthkit.autopsy.core.Installer <init>
+INFO: core installer created
+2018-08-21 23:25:39.907 org.sleuthkit.autopsy.imagegallery.ImageGalleryController reset
+INFO: resetting ImageGalleryControler to initial state.
+2018-08-21 23:25:39.917 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case autopsy (autopsy_20180821_231632) in C:\Users\molan\OneDrive\CTF\ksnctf_code\18\autopsy

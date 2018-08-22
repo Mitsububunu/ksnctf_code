@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>4.0</SchemaVersion>
+  <CreatedDate>2018/08/21 23:16:32 (GMT+09:00)</CreatedDate>
+  <ModifiedDate>2018/08/21 23:16:43 (GMT+09:00)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.8.0</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.8.0</SavedByAutopsyVersion>
+  <Case>
+    <Name>autopsy_20180821_231632</Name>
+    <DisplayName>autopsy</DisplayName>
+    <Number>1234</Number>
+    <Examiner/>
+    <ExaminerPhone/>
+    <ExaminerEmail/>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+</AutopsyCase>
