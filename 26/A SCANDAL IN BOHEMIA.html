@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://ctfq.sweetduet.info:10080/~q26/index.pl/index.pl -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>A SCANDAL IN BOHEMIA</title>
+  <style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
+  <body>
+    <h1>A SCANDAL IN BOHEMIA</h1>
+    <div>
+      <a href="http://ctfq.sweetduet.info:10080/~q26/index.pl/a_scandal_in_bohemia_1.txt">A SCANDAL IN BOHEMIA I</a>&nbsp;
+      <a href="http://ctfq.sweetduet.info:10080/~q26/index.pl/a_scandal_in_bohemia_2.txt">A SCANDAL IN BOHEMIA II</a>&nbsp;
+      <a href="http://ctfq.sweetduet.info:10080/~q26/index.pl/a_scandal_in_bohemia_3.txt">A SCANDAL IN BOHEMIA III</a>&nbsp;
+    </div>
+    <hr>
+    <div>
+#!/usr/bin/perl<br>
+use CGI;<br>
+<br>
+print &lt;&lt;'EOS';<br>
+Content-type: text/html; charset=utf-8<br>
+<br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+  &lt;head&gt;<br>
+    &lt;title&gt;A SCANDAL IN BOHEMIA&lt;/title&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+    &lt;h1&gt;A SCANDAL IN BOHEMIA&lt;/h1&gt;<br>
+    &lt;div&gt;<br>
+      &lt;a href="/~q26/index.pl/a_scandal_in_bohemia_1.txt"&gt;A SCANDAL IN BOHEMIA I&lt;/a&gt;&amp;nbsp;<br>
+      &lt;a href="/~q26/index.pl/a_scandal_in_bohemia_2.txt"&gt;A SCANDAL IN BOHEMIA II&lt;/a&gt;&amp;nbsp;<br>
+      &lt;a href="/~q26/index.pl/a_scandal_in_bohemia_3.txt"&gt;A SCANDAL IN BOHEMIA III&lt;/a&gt;&amp;nbsp;<br>
+    &lt;/div&gt;<br>
+    &lt;hr&gt;<br>
+    &lt;div&gt;<br>
+EOS<br>
+<br>
+<br>
+<br>
+# Can you crack me? :P<br>
+open(F,'cracked.txt');<br>
+my $t = &lt;F&gt;;<br>
+chomp($t);<br>
+if ($t eq 'h@ck3d!') {<br>
+    print 'FLAG_****************&lt;br&gt;&lt;br&gt;';<br>
+}<br>
+unlink('cracked.txt');<br>
+####<br>
+<br>
+<br>
+<br>
+open(F,substr($ENV{'PATH_INFO'},1));<br>
+<br>
+my $cgi = new CGI;<br>
+$cgi-&gt;charset('utf-8');<br>
+while(&lt;F&gt;) {<br>
+    chomp;<br>
+    s/FLAG_\w+/FLAG_****************/g;<br>
+    print $cgi-&gt;escapeHTML($_)."&lt;br&gt;\n";<br>
+}<br>
+<br>
+print &lt;&lt;'EOS';<br>
+    &lt;/div&gt;<br>
+    &lt;hr&gt;<br>
+    &lt;address&gt;<br>
+      http://www.gutenberg.org/files/1661/1661-h/1661-h.htm<br>
+    &lt;/address&gt;<br>
+  &lt;/body&gt;<br>
+&lt;/html&gt;<br>
+EOS<br>
+    </div>
+    <hr>
+    <address>
+      http://www.gutenberg.org/files/1661/1661-h/1661-h.htm
+    </address>
+  
+
+</body></html>
