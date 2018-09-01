@@ -1,15 +1,9 @@
 # coding: UTF-8
 
-"""
-
-Not solving
-
-"""
-
-
 import hashlib
 import urllib
-#import urllib2
+import urllib.request
+import urllib.error
 
 url = 'http://ksnctf.sweetduet.info:10080/~q9/flag.html'
 
@@ -27,10 +21,16 @@ md5a1 = "c627e19450db746b739f41b64097d449"
 
 a2 = 'GET:' + uri
 
+def getNonce():
+    try:
+        data = urllib.request.urlopen(url)
+        html = data.read()
+    except urllib.error.HTTPError as e:
+        nonce = e.info()['WWW-Authenticate'].split('"')[3]
+        return nonce	
 
 def toMD5(str):
-	return hashlib.md5(str).hexdigest()
-
+    return hashlib.md5(str.encode()).hexdigest()
 
 
 def genAuthorized(nonce, response):
@@ -40,21 +40,19 @@ def genAuthorized(nonce, response):
 
 
 def main():
-	#nonce = getNonce()
-	#response = genResponse(nonce)
-    #auth = genAuthorized(nonce, response)
-    reqMD5 = toMD5(md5a1 + ':' + nonce + ':' + nc + ':' + cnonce + ':' + qop + ':' + toMD5(a2))
-    authorized = 'Digest username="' + username + '", realm="' + realm + '", nonce="' + nonce + '",uri="' + uri + '", algorithm=' + algorithm + ', response="' + reqMD5 + '", qop=' + qop + ', nc=' + nc + ', cnonce="' + cnonce + '"'
+
+    nonce = getNonce()
+
+    reqMD5 = toMD5((md5a1 + ':' + nonce + ':' + nc + ':' + cnonce + ':' + qop + ':' + toMD5(a2)))
+    authorized = ('Digest username="' + username + '", realm="' + realm + '", nonce="' + nonce + '",uri="' + uri + '", algorithm=' + algorithm + ', response="' + reqMD5 + '", qop=' + qop + ', nc=' + nc + ', cnonce="' + cnonce + '"')
+
     header = {'Authorization' : authorized}
     req = urllib.request.Request(url, None, header)
     
-    #try:
     data = urllib.request.urlopen(req)
     html = data.read()
     print(html) 
-    #except urllib2.HTTPError, e:
-    #print(e.code) 
-    #print(e.info())
+
 		
 if __name__ == '__main__':
     main()
