@@ -1,47 +1,44 @@
-import http.client,hashlib
-import hlextend
+import subprocess
+import re
+import requests
 
-def main():
-    count=1
-    while True:
-        sha=hlextend.new("sha512")
-        new=sha.extend(",9,10","7,7",count,"afb98ced71d393874b68d65781bc69b2c90a8ad3c31a06922b01e4a00c986c84d953ff84180104d8f6f899ff1dff7ff93348dd62168c437a22f6325584f478c7")
-        new=new.replace("\\x80","80".decode("hex"))
-        new=new.replace("\\x00","%00")
-        c=0
-        ele=[]
-        e=""
-        flag=0
-        for i in new:
-            if i=="\\":
-                flag=2
-                continue
-            if flag==2:
-                flag=1
-                continue
-            if flag==1:
-                e=e+i
-                c=c+1
-            if c==2:
-                ele.append(e)
-                flag=0
-                c=0
-                e=""
-        for k in ele:
-            new=new.replace("\\x"+k,k.decode("hex"))
-        conn=httplib.HTTPConnection("ctfq.sweetduet.info:10080")
-        uri="/~q31/kangacha.php"
-        ship="ship="+new
-        signature="signature="+sha.hexdigest()
-        header={"Cookie":ship+";"+signature}
-        conn.request("GET",uri,None,header)
-        res=conn.getresponse()
-        head=res.getheaders()
-        k=head[0][1]
-        if k!="287":
-            break
-        count=count+1
-        print(count)
-    print(res.read())
-if __name__=="__main__":
-    main()
+# セッションを接続するための準備
+kangacha_url = "http://ctfq.sweetduet.info:10080/~q31/kangacha.php"
+s= requests.Session()
+
+print("一度ポストし、クッキーの情報を得る")
+r = s.post(kangacha_url, data = {"submit":"Gacha"})
+data = s.cookies["ship"]
+signature = s.cookies["signature"]
+
+print("hashpump を subprocess で呼ぶための準備")
+args = {}
+args["data"] = data
+args["signature"] = signature
+args["key"] = 21
+args["append"] = ",10"
+
+cmd = "hashpump -s {signature} -k {key} -d {data} "
+cmd += "-a {append}"
+cmd = cmd.format(**args)
+
+print("Popen")
+#stdout=subprocess.PIPE,
+proc = subprocess.Popen(cmd.strip().split(" "),  shell=True)
+print("proc.communicate()")
+out, err = proc.communicate()
+
+print("得られた cookie を url エンコードにする") 
+crack_signature, crack_data = out.decode("utf-8").strip().split("\n")
+crack_data = crack_data.replace("\\x","%")
+
+print("cookie を変更して再接続")
+s.cookies.clear()
+setargs = {"domain":"ctfq.sweetduet.info","path":"/~q31"}
+s.cookies.set("ship",crack_data,**setargs)
+s.cookies.set("signature",crack_signature,**setargs)
+r = s.get(kangacha_url)
+
+print("Yamato がドロップしているので、フラグ部分を抜き出す。")
+m = re.search("Yamato \[(?P<flag>.*)\]", r.text)
+print(m.group("flag"))
