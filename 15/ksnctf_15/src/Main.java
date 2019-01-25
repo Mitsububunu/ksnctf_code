@@ -1,3 +1,12 @@
+/*
+        < Reference >
+        ■ アイジア
+        2018-11-21
+        ksnctf 15 Jewel
+
+        http://aithea.hatenablog.com/entry/2018/11/21/162158
+*/
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -26,7 +35,7 @@ public class Main {
 
         // IMEI番号
         String s = "999999913371337";
-        
+
         //jewel_c.pngの復号
         SecretKeySpec secretkeyspec = new SecretKeySpec(
                 (new StringBuilder("!"))
