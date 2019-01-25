@@ -30,18 +30,27 @@ public class JewelActivity extends Activity
 
     public void onCreate(Bundle bundle)
     {
-        Object obj;
         super.onCreate(bundle);
+
         setContentView(0x7f030000);
+        
+        Object obj;
         obj = ((TelephonyManager)getSystemService("phone")).getDeviceId();
+        
         try
         {
             bundle = MessageDigest.getInstance("SHA-256");
             bundle.update(((String) (obj)).getBytes("ASCII"));
             bundle = (new BigInteger(bundle.digest())).toString(16);
+
+            // 前8桁のIDをチェック
             if(!((String) (obj)).substring(0, 8).equals("99999991"))
             {
-                (new android.app.AlertDialog.Builder(this)).setMessage("Your device is not supported").setCancelable(false).setPositiveButton("OK", new b(this)).show();
+                (new android.app.AlertDialog
+                        .Builder(this))
+                        .setMessage("Your device is not supported")
+                        .setCancelable(false).setPositiveButton("OK", new b(this))
+                        .show();
                 return;
             }
         }
@@ -51,22 +60,37 @@ public class JewelActivity extends Activity
             Toast.makeText(this, bundle.toString(), 1).show();
             return;
         }
+
+        // 携帯デバイスのIMEI番号
         if(!bundle.equals("356280a58d3c437a45268a0b226d8cccad7b5dd28f5d1b37abf1873cc426a8a5"))
         {
-            (new android.app.AlertDialog.Builder(this)).setMessage("You are not a valid user").setCancelable(false).setPositiveButton("OK", new a(this)).show();
+            (new android.app.AlertDialog
+                    .Builder(this))
+                    .setMessage("You are not a valid user")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new a(this))
+                    .show();
             return;
         }
+
         Object obj1 = getResources().openRawResource(0x7f040000);
         bundle = new byte[((InputStream) (obj1)).available()];
         ((InputStream) (obj1)).read(bundle);
-        obj = new SecretKeySpec((new StringBuilder("!")).append(((String) (obj))).toString().getBytes("ASCII"), "AES");
+
+        obj = new SecretKeySpec((new StringBuilder("!"))
+                .append(((String) (obj)))
+                .toString()
+                .getBytes("ASCII"), "AES");
         obj1 = new IvParameterSpec("kLwC29iMc4nRMuE5".getBytes());
+        
         Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
         cipher.init(2, ((java.security.Key) (obj)), ((java.security.spec.AlgorithmParameterSpec) (obj1)));
         bundle = cipher.doFinal(bundle);
+        
         obj = new ImageView(this);
         ((ImageView) (obj)).setImageBitmap(BitmapFactory.decodeByteArray(bundle, 0, bundle.length));
         setContentView(((android.view.View) (obj)));
+        
         return;
     }
 }
