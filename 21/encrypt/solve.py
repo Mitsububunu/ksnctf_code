@@ -1,3 +1,14 @@
+"""
+        < Reference >
+        ■ ksnctf 21 Perfect Cipher 200pt
+        
+        ksnctf 21 Perfect Cipher
+
+        https://qiita.com/CTFman/items/b21b148c3a4e4136dd4d
+        https://github.com/ordovicia/ksnctf/tree/master/21-Perfect_Cipher
+        
+"""
+
 import random
 import struct
 
