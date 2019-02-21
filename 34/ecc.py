@@ -119,7 +119,7 @@ D += "\x00"*((K-len(D))%K)
 
 E = ""
 for i in range(0,len(D),K):
-    print "%d/%d"%(i,len(D))
+    print("%d/%d" % (i,len(D)))
     E += ecc(D[i:i+K])
 
 # Add noise :)
