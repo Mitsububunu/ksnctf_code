@@ -1,3 +1,3 @@
-# ksnctf_code
+# ksnctf writeup code
 
-Online CTF ksnctf write up http://ksnctf.sweetduet.info/
+Online CTF ksnctf writeup http://ksnctf.sweetduet.info/
